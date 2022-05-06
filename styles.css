@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Very-vark-blue: hsl(220, 13%, 13%);
+    --Dark-grayish-blue: hsl(219, 9%, 45%);
+    --Grayish-blue: hsl(220, 14%, 75%);
+    --Light-grayish-blue: hsl(223, 64%, 98%);
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+}
+
+html{
+    font-family: 'Kumbh Sans', sans-serif;;
+}
+main{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem auto;
+}
+
+
+/* NAVBAR */
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.right, .left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+}
+
+.brandName h1{
+    font-size: 2rem;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    /* width: 80%; */
+    justify-content: space-around;
+
+}
+li{
+    list-style: none;
+    font-size: 1rem;
+    color: var(--Dark-grayish-blue);
+}
+
+
+.burger{
+    display: none;
+}
+
+.burger div {
+    width: 28.5px;
+    height: 3px;
+    background-color: #000000;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+
+.cart img{
+    width: 30px;
+    height: 30px;
+}
+
+.user img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.break{
+    margin-top: 2rem;
+    height: 2px;
+    background-color: hsl(0, 0%, 94%);;
+}
+
+/* CONTENT */
+
+/* LIGHT-BOX */
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+      }
+    .burger{
+        display: block;
+    }
+
+    .left{
+        flex-direction: row-reverse;
+    }
+    .navLinks {
+        position: absolute;
+        left: 0px;
+        top: 0vh;
+        padding-top: 20vh;
+        height: 100%;
+        flex-direction: column;
+        background-color: #181719;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        transform: translateX(0%);
+        transition: transform 0.5s ease-out;
+      }
+      .navLinks li {
+        /* opacity: 0; */
+        padding: 2rem;
+      }
+    ul{
+        /* display: none; */
+    }
+
+    
+}
